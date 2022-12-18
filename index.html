@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Temples</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+          font-family: 'NeueHaas'; /*a name to be used later*/
+          src: url('./assets/NHaasGrotesk.woff'); /*URL to font*/
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      p {
+        font-family:  Helvetica, sans-serif;
+        font-size: 4em;
+        padding: 60px 100px;
+      }
+      a {
+        color: inherit; /* blue colors for links too */
+        text-decoration: inherit; /* no underline */
+      }
+      .row {
+        display: flex;
+      }
+      
+      /* Create two equal columns that sits next to each other */
+      .column {
+        flex: 50%;
+        padding: 10px;
+        height: 100vh; /* Should be removed. Only for demonstration */
+      }
+      a.fill-div {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+      }
+
+      </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" style="background-color:#eebf19;">
+        <a href="analfabetka.html" class="fill-div">
+          <p> <span style="font-weight:bold">Analfabetka</span> <span>Agota Kristof</span></p>
+        </a>
+      </div>
+      <div class="column" style="background-color:#1F86E0;">
+        <a href="svila.html" class="fill-div">
+          <p><span style="font-weight:bold">Svila</span> <span>Alessandro Baricco</span></p>
+          <p></p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
